@@ -1,0 +1,3615 @@
+{
+  "title": "Secure UPI: Machine Learning-Driven Fraud Detection System for UPI Transactions",
+  "outline": [
+    {
+      "level": "H5",
+      "text": "2024 2nd International Conference on Disruptive Technologies (ICDT)",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Secure UPI: Machine Learning-Driven Fraud",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Detection System for UPI Transactions",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Rupa Rani",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Department of Computer Science &",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Engineering, Ajay Kumar Garg",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Engineering College, Ghaziabad,",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Ghaziabad, U.P., India.",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Department of Computer Science &",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Engineering, Banasthali Vidyapith,",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Rajasthan",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Email: rupachoudhary2010@gmail.com",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "ORCID ID- 0000-0002-4783-3857",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Adnan Alam",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Department of Computer Science &",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Engineering- Data Science, ABES Institute",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "of Technology, Ghaziabad, U.P., India.",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Email: alamadnan256@gmail.com",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Abdul Javed",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Department of Computer Science &",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Engineering- Data Science, ABES Institute",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "of Technology, Ghaziabad, U.P., India.",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Email: abdul2020csds033@abesit.edu.in",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Abstract— SecureUPI specializes in developing an advanced",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "fraud detection gadget the usage of the effective XGBoost device",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "getting to know set of rules to create an advanced fraud identity",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "device. XGBoost is a properly-proper alternative for enhancing",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "the  precision  of  fraud  detection  fashions  because  of  its",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "reputation for dealing with tricky datasets with efficiency and",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "its  music  record  of  success  throughout  multiple  industries.  In",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "order  to  extract  pertinent  records,  like  transaction  quantity,",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "frequency,  and  place,  our  approach  preprocesses  UPI",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "transaction facts. This article makes use of a labelled dataset to",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "train the XGBoost version in order that we may also take gain",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "of  its  sturdy  prediction  talents  and  capacity  to  handle",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "imbalanced datasets. To help create a system that is less difficult",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "to apprehend and use, feature importance evaluation is used to",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "discover essential symptoms of feasible fraud. After training, the",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "model is covered right into a real-time UPI transaction tracking",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "device, in which it maintains an eye fixed out for any suspicious",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "traits in incoming transactions. In order to lessen the results of",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "fraudulent  activity,  the  system  is  constructed with  98.2  %",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "accuracy to  send  out  instant  notifications  and  take  preventive",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "steps.  This  challenge  allows  in  improving  UPI  transaction",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "security and advancing economic era are accomplished through",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "demonstrating  the  performance  of  machine  learning  in  fraud",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "detection.",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Keywords— UPI, Fraud Detection, SMOTE, PCA, XGBoost,",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Imbalanced  Datasets,  Dimensionality  Reduction,  Machine",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Learning.",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "I. INTRODUCTION",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "In a global in which virtual transactions rule, the Unified",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Payments Interface (UPI) has become a current platform that",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "streamlines and expedites monetary transactions [1]. But the",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "quick development of digital bills also gives the undertaking",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "of  fighting  state-of-the-art  fraudulent  sports  activities.",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Through  the  advent  of  a  sophisticated  UPI  Fraud  Detection",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "System  and  the  utility  of  current  pre-processing,  feature",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "extraction,  and  algorithm  choice  techniques,  this  venture",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "tackles this essential assignment [2] [3].",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Improving  virtual  transaction  security  and  dependability",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "via the UPI framework is the principle intention of the UPI",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Fraud  Detection  System.  The  tool  pursuits  to  hit  upon  and",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "decrease  fraudulent  sports  activities  via  using  modern",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "techniques, making certain the safety and reliability of the UPI",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "surroundings  [4].  During  the  UPI  Fraud  Detection  System's",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "design  and  deployment,  protection  and  privateness  of",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "sensitive  economic  records  are  of  utmost  importance.  Strict",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "methods that comply with felony requirements and industry",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "first-rate  practices  are  used  to  shield  and  anonymize  the",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "statistics  that  has  been  gathered.  The  system  is  made  to",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "paintings in the constraints of privateness and statistics safety",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "laws,  selling  person  self  assurance  and criminal  compliance",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "[5].",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "(cid:3)",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Fig. 1.",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Interface of Secure UPI",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "(cid:3)",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "(cid:3)",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Figure 1 shows the interface of Secure UPI website which",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "is supposed to be advanced constantly it isn't static [6] This",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "structure of the device consists of non-stop mastering, which",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "lets in it to alter to converting fraud techniques and customer",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "conduct.  By  mechanically  retraining  the  version,  the  device",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "makes  use  of  the  most  modern  records  to  beautify  its",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "predicting  capabilities.  By  incorporating  non-save  you",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "studying, the UPI Fraud Detection System is assured to remain",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "a sincere protector within the path of latest threats and to hold",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "its efficacy over the years [7].",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "For the cause of resolving the inherent elegance imbalance",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "in  UPI  transaction  datasets,  the  Synthetic  Minority  Over-",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "sampling Technique (SMOTE) choice made for the duration",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "of  pre-processing  is  essential  [8]  [9].  Since  fraud  times  are",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "commonly  unusual,  SMOTE  creates  fictitious  examples  to",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "even out the commands just so the following set of rules can",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "teach  on  a  greater  representative  dataset. By  doing  this,  the",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "model's  capacity  to  identify  fraudulent  patterns  is  improved",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "and bias against the majority class is eliminated. [10] Because",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "Principal Component Analysis reduces dimensionality while",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "effectively  collecting  the  most  important  information in  the",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "dataset, it is used. principle component analysis (PCA) helps",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "identify patterns that significantly contribute to the variation",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "979-8-3503-7105-5/24/$31.00 ©2024 IEEE",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "924",
+      "page": 1
+    },
+    {
+      "level": "H5",
+      "text": "2024 2nd International Conference on Disruptive Technologies (ICDT)",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "the  data  by  converting",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "into",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "uncorrelated  principle  components.  As  a  result,  features  are",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "represented more effectively, which is crucial for developing",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "reliable fraud detection models [11].",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "the  original",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "features",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "The  UPI  Fraud  Detection  System  operates  in  real-time,",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "continuously monitoring incoming transactions as they occur",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "[12].  By  utilizing  the  XGBoost  algorithm's  speed  and",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "efficiency,  transactions  are  quickly  compared  to  the  learnt",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "patterns,  enabling  the  immediate detection  of  potentially",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "fraudulent activity. By ensuring that any suspicious activity is",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "immediately addressed, real-time monitoring helps to reduce",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "the negative effects of fraudulent transactions on both users",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "and financial institutions [13].",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "Fig. 2. Data Splitting",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "Figure  2  shows  how  we  are  splitting  the  data  into  2",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "sections.  Then we  will  search  for  the  best parameter",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "combination for the XGBoost algorithm, using K-fold cross",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "confirmation.  Before  we  get  into  the  details  of  parameter",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "optimization,  a  caveat  about  how  I  use  data  for  cross",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "confirmation is in order. XGBoost offers a useful point called",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "beforehand  stopping,  which  helps  help  overfitting  due  to",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "growing too numerous trees. At every replication, it evaluates",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "the performance of the model so far on a confirmation set. It",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "keeps training until the error on this confirmation set, which",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "I'll call beforehand stopping set, fails to ameliorate for a given",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "number of duplications. This means that we're optimizing the",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "number of trees as we train the model. But that also means that",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "we can not use that same set to estimate the model. else, we'd",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "overfit(  the  number  of  trees  parameter)  and  the  cross",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "confirmation score will be poisoned overhead. That's why we",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "need a separate confirmation set for early stopping, in addition",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "to the( rotating) confirmation set used in cross confirmation.",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "thus,  to  help  the  early  stopping  point  from  overfitting,  in",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "addition to unyoking the data into a training and a test set, I",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "also set aside a small portion of the training set to be used as",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "the early stopping confirmation set.",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "The  primary  classification  model  is  XGBoost,  an  ensemble",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "learning  algorithm  selected  for  its  outstanding  performance",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "and adaptability. It is especially well-suited for fraud detection",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "due to its capacity to manage intricate linkages, nonlinearities,",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "and  interactions  within  the  data  base.  An  extremely  precise",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "and  flexible  classification  procedure  is  guaranteed  by  the",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "ensemble  of  decision  trees,  which  have  been  trained",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "successively to fix the mistakes of the earlier models [14] [15].",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "The  project  consists  of  an  in  depth  hyperparameter",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "tweaking  device  to  get  the  most  predictive  power  out  of",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "XGBoost.  Systematic  adjustments  are  made  to  parameters",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "which  incorporates  mastering  rate,  maximum  tree  intensity,",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "and kind of boosting rounds. Through this improvement, the",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "set of guidelines plays higher and achieves the proper balance",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "among precision and recall— metrics which can be essential",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "to  the  identification  of  fraud  [16]  [17].  In  the  UPI  Fraud",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "Detection System, hyperparameter tuning is a critical step in",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "pleasant-tuning  the  eXtreme  Gradient  Boosting  (XGBoost)",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "set of policies, which serves because the primary class model.",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "XGBoost comes with severa hyperparameters, together with",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "studying  fee,  most  depth  of  wooden,  extensive  form  of",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "boosting  rounds,  and  regularization  phrases,  among  others",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "[18].",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "and",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "The  system  has  thorough  reporting  and  assessment",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "capabilities  that  offer  facts  about  effectiveness,  overall",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "performance,",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "[19].",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "abnormalities",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "Stakeholders can advantage a complete records of the fraud",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "detection panorama, discover the facts of flagged transactions,",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "and  realise  the  features  that  make  contributions  to  danger",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "scores via the use of interactive dashboards and visualizations.",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "This  reporting  feature  permits  with  compliance  reporting,",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "enables  well-knowledgeable  preference-making,  and  gives",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "insightful enter for brought machine development [20]",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "determined",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "In cease, a high development round economic safety is the",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "UPI Fraud Detection System. Using behavioural evaluation,",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "anomaly detection, and tool studying, the challenge seeks to",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "gather  a  strong  defence  in  opposition  to  fraudulent  UPI",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "transactions.  This  all-encompassing  method  not  exceptional",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "identifies and stops fraudulent interest, however it additionally",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "advances  protection  capabilities  constantly  inside  the  ever-",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "changing region of virtual banking. The undertaking has the",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "functionality to noticeably improve economic safety by means",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "of the use of strengthening client don't forget and the of upi",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "transaction.",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "II. LITERATURE SURVEY",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "M.A Ibrahim [1], This research paper discusses the most",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "common methods of fraud, detection techniques, and recent",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "findings  in  the  field. The  researchers  used  the  SMOTE",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "technique  to balance  the  dataset  and  found that  models  like",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "Decision  Tree,  Random  Forest,  Neural  Network,  and  K-",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "nearest neighbour performed well when fitted and trained with",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "the  data.  The  system allows  users  to  select  their  preferred",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "model.  The  Random  Forest  model  achieved  an  accuracy  of",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "93.58%,  but  its  efficiency  decreases  when  trained  with",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "imbalanced transaction datasets.",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "P.  Boulieris  [2],  The  main  objective  of  the  work  is  to",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "present a dataset for online fraud detection that is anonymized",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "and  publicly  available.  We  argue  that  standard  evaluation",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "metrics  used  in  existing  literature  should  be  complemented",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "with  online  and  offline  assessments  to  evaluate  model",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "performance in a real-world business setting. We found that",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "incorporating anomaly detection features improves all metrics",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "except  for  online  detection,  highlighting the  importance  of",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "considering  both  online  and  offline  evaluation  alongside",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "standard metrics. Despite using fewer traditional features, the",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "addition  of  NLP-based  features  significantly  improved",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "performance compared to a previous study.",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "B.  Baesens  [9],  This  paper  discusses  the  importance  of",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "information technology in fraud detection. The authors share",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "information  technology  for  feature  design  and  application",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "design.  They  argue  that  intelligent  data  design  is  more",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "effective  in improving  analytical  efficiency than developing",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "techniques.  The  authors",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "sophisticated  new  analytical",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "demonstrate  this  using  a  large  European  bank  payment",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "transaction  data  set  and  show  that  both  feature  design  and",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "request  design  significantly  improve  the  performance  of",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "analytical models. They also point out that simple analytical",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "methods such as logistic regression and classification trees can",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "produce good results if the data are well designed. Although",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "the focus is on fraud in payment transactions, the techniques",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "925",
+      "page": 2
+    },
+    {
+      "level": "H5",
+      "text": "2024 2nd International Conference on Disruptive Technologies (ICDT)",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "discussed  can  be  extended  to  other  frauds  in  health  care,",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "insurance or electronic commerce.",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "S. Alam [12], The XGBoost Classifier initially produced",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "the best results among the four classification algorithms used.",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "To  improve  classifier  performance,  three  different data",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "balancing approaches were used, and ROS produced the best",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "results. RUS and the SMOTE method did not perform as well.",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "With  Random  Over  Sampling  and  the  XGBoost  Classifier,",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "accuracy,  precision,",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "increased",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "significantly.  In  the  future,  more  effective  approaches  and",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "strategies should be explored to overcome the limitations of",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "this study.",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "recall,  and  F1  scores",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "S. Mohanavalli [13], Data cleaning is a process that deals",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "with  various  data  quality  problems  such  as  noise,  outliers,",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "inconsistent data, duplicates and missing values. The focus is",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "on detecting and eliminating errors and inconsistencies during",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "the  data  collection  phase.  Traditional",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "techniques  mostly",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "belong to this phase, but hybrid forms of error correction have",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "yet  to  be  developed  to  provide  noise-free  samples  for  data",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "mining and analysis. Different denoising techniques can lead",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "to different databases and the median of the collected data can",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "be used for homogeneous data sets, the range of values can be",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "expanded for heterogeneous data sets. Future work includes",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "the",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "for  cleaning",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "in  various",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "homogeneous  data  and",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "heterogeneous datasets using a voting system that combines",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "multiple  techniques.  In  addition,  the  impact  of  denoising",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "techniques  on  classification  performance  and  mining",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "performance should be investigated for large datasets.",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "investigation  of  hybrid  methods",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "reducing  noise",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "M.  Greenacre  [21],  A  popular  multivariate  analytic",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "method  for  comprehending  and  exploring  data  is  PCA",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "(Principal  Component  analysis).  Its  ability",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "to  extract",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "important  information  from  complicated  datasets  has  been",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "demonstrated  by  its  application  in  a  variety  of  areas.  Large",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "datasets of all kinds may now be analyzed using PCA thanks",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "to recent developments, and this statistical technique should",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "continue  to  be  improved  by  future  breakthroughs.  PCA  is",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "regarded as a fundamental tool in data science, along with its",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "expansions and variants.",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "D. Dablain [22], To solve imbalanced data, a novel model",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "called  DeepSMOTE  combines  deep  learning  and  the  well-",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "known SMOTE technique. In order to balance the training set",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "and enable bias-free training of deep classifiers, it generates",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "fictitious  instances.  DeepSMOTE  can  create  effective  low-",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "dimensional embeddings, interact with raw photos, and create",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "artificial",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "experimental  research,  DeepSMOTE  works  better  than",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "alternative  oversampling  algorithms  and  is  resilient  to",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "different  imbalance  ratios.  Subsequent  efforts  will  focus  on",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "augmenting  DeepSMOTE  with  challenges  at  the  class  and",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "instance levels, refining the loss function, and expanding its",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "capabilities  to  accommodate  dynamic  class  ratios  and",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "additional data modalities like as text and graphs.",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "images  of  excellent  quality.  According",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "TABLE 1. COMPARATIVE STUDY OF PREVIOUS RESEARCH",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Author",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "& Year",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Purposed",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Solution",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "[1]",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Fraud detection",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "model for",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "illegitimate",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "transactions",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Technolog",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Questionna",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "ire-",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Responded",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "transaction",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "model",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Pros",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Cons",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Works well",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "for old user",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Didn’t",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "work for",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "new user",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "K-Nearest",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Neighbours",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Algorithm",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "ROS and",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "RUS",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "XGBoost",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Easy to",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "implement",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "on small",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "datasets",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Easy to",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "implement",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "imbalanced",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "dataset",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Easily",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "handles",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "imbalanced",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "with",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "maximum",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "accuracy",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Didn’t",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "work",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "large",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "datasets",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Loss",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "valuable",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "data",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Risk of",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "overfitting",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "if not",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "appropriat",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "ely tuned",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Fraud  detection",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "with",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "natural",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "language",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "processing",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Data",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Engineering for",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Fraud Detection",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Fraud Detection",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Unbalanced",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Credit Card",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Fraud Detection",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Data: A",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Machine",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Learning-",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Oriented",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Comparative",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Study of",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Balancing",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Techniques",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Survey of Pre-",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "processing",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Techniques for",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Mining Big Data",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "[2]",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "[9]",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "[12]",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "[13]",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "[21]",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "[22]",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Logistic",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Regression",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Principal",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Component",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Analysis",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "PCA",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "SMOTE",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "DeepSMOTE:",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Fusing Deep",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Learning and",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "SMOTE for",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Imbalanced Data",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Low",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "accuracy",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Easily",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "handle large",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "datasets as",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "well as",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "practical for",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "real-time",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "fraud",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "detection",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Easily",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "reduces  the",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "noise",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "and",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "redundancy",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "May lack",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "clear",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "interpretab",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "ility",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Risk of",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "overfitting",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "due to",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "synthetic",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "cases",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Preserves",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "information",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "generating",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "synthetic",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "cases in the",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "dataset",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "The  above  table  1  shows  the  comparison  of  the  previous",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "related research.",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "III. PROPOSED METHODOLOGY",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "The below figure 3 shows the overall technique that we are",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "implementing on our dataset. After dividing the dataset into",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "training and test sets in which training data set contains 80%",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "of the original data whereas the test set contains the remaining",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "20%  of  the  original  data. Then  we  will  perform  all  these",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "techniques on our training data set and in last we will use test",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "data set to predict the transaction authenticity.",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Fig. 3. Procedure for detecting UPI fraud",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "1. Data Collection (Taking User Transaction Details):",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "Description:",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "926",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "2024 2nd International Conference on Disruptive Technologies (ICDT)",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Relevant information about user transactions is gathered",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "in  the  first  stage.  This  includes  any  information  deemed",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "necessary for the fraud detection task, including timestamps,",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "transaction amounts, user information, and other facts.",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Purpose:",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "To  train  a  strong  fraud  detection  model,  obtaining  an",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "extensive dataset is essential. The dataset forms the basis for",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "the process's further stages.",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "2. Pre-processing with SMOTE Algorithm:",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Description:",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "The dataset is pre-processed inside the 2nd degree using",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "the Synthetic  Minority Over-sampling Technique (SMOTE)",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "method.  SMOTE  is  in  particular  designed  to  cope  with",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "information imbalances, particularly whilst the proportion of",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "legitimate transactions to fraudulent transactions is huge.",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Purpose:",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Biased  models  that  carry  out  badly  on  minority  training",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "(fraudulent  transactions)  might  possibly  forestall  end  result",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "from  imbalanced  datasets.  To  balance  the  distribution  of",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "commands  and  enhance",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "fraud  detection",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "capabilities, SMOTE creates artificial samples.",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "the  version's",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "3. Feature Extraction with PCA:",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Description:",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Principal Component Analysis (PCA) is used in the 1/three",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "diploma to extract features. PCA is used to lessen the dataset's",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "dimensionality on  the  identical  time  as  retaining  important",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "data.  This  aids  in overcoming the  computational  difficulties",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "added on by huge-scale statistics.",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Purpose:",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "By  using  PCA  to  lessen  dimensionality,  the  dataset",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "becomes extra practicable for system learning algorithms. The",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "motive  of  extracted abilties  is  to  extract  the  most  critical",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "information, which improves model performance.",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "4. Model Training with XGBoost:",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Description:",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "The fourth segment includes schooling a system learning",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "model, XGBoost, the use of the pre-processed and function-",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "extracted dataset.  XGBoost  is  a  famous  ensemble  gaining",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "knowledge  of  set  of  policies  that  excels  at  dealing  with",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "complex,  non-linear  relationships  in  statistics  because  of  its",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "tremendous traditional performance and performance.",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Purpose:",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "XGBoost is selected because of its versatility in managing",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "unbalanced  datasets,  noise  resilience,  and  capability  to",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "perceive complex styles inside the records. Based on the skills",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "which have been processed and altered, the version is skilled",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "to distinguish amongst real and fraudulent transactions.",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "5. Decision (Real or Fake Transaction):",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Description:",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Making predictions on new, unseen transactions the use of",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "the informed XGBoost version is the final stage. The version",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "uses  the  styles  it  has  learnt  in  some  unspecified  time  in  the",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "future of training to categorize every transaction as both real",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "or fraudulent.",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Purpose:",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "This stage establishes how the version have to be used in",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "real  situations.  Accurately  figuring  out  and  flagging  in  all",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "likelihood  fraudulent  transactions  is  the  reason,  giving",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "financial",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "institutions  or  rate  processors  a  device  for",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "preference-making.",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "This  flowchart  describes  a  methodical  procedure  for",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "detecting UPI fraud that begins with data collection, moves on",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "to correct imbalances, reduces dimensionality, trains a reliable",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "model,  and  concludes  with  decision-making  based  on  the",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "model's  predictions.  Every  stage  advances  the  model's",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "precision and efficacy in differentiating between authentic and",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "fraudulent transactions.",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "IV. RESULT",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "When  we  fill  all  the  mentioned  transactions  details  we",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "need to click on the “Click to Detect” button to check whether",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "the transaction is Valid or Fraud transaction.",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "If  the  transaction  is  valid  figure  4  will  be  shown  as  an",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "output  and  if the  transaction  is  fraud, then  figure  5  will  be",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "shown.",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Fig. 4. Figure 1: Valid Transaction",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Fig. 5. Fraud Transaction",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "In  figure  6  we  can  see  the  comparison  of  multiple",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "algorithms in which XGBoost outperforms all the algorithms.",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "(cid:62)(cid:381)(cid:336)(cid:349)(cid:400)(cid:410)(cid:349)(cid:272)(cid:3)(cid:90)(cid:286)(cid:336)(cid:396)(cid:286)(cid:400)(cid:400)(cid:349)(cid:381)(cid:374)",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "(cid:94)(cid:437)(cid:393)(cid:393)(cid:381)(cid:396)(cid:410)(cid:3)(cid:115)(cid:286)(cid:272)(cid:410)(cid:381)(cid:396)(cid:3)(cid:68)(cid:258)(cid:272)(cid:346)(cid:349)(cid:374)(cid:286)",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "(cid:24)(cid:286)(cid:272)(cid:349)(cid:400)(cid:349)(cid:381)(cid:374)(cid:3)(cid:100)(cid:396)(cid:286)(cid:286)",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "(cid:121)(cid:39)(cid:17)(cid:381)(cid:381)(cid:400)(cid:410)",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "(cid:1011)(cid:1012)(cid:856)(cid:1013)",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "(cid:1012)(cid:1004)(cid:856)(cid:1006)",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "(cid:1012)(cid:1005)(cid:856)(cid:1009)",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "(cid:1012)(cid:1007)(cid:856)(cid:1008)",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "(cid:1012)(cid:1012)(cid:856)(cid:1011)",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "(cid:1013)(cid:1006)(cid:856)(cid:1010)",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "(cid:1013)(cid:1012)(cid:856)(cid:1006)",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Accuracy",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Fig. 6. Accuracy Comparison",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "The below table 2 shows the comparison of all algorithms.",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "TABLE 2. COMPARISON OF ACCURACY",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Algorithm Name",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Accuracy Score (%)",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "XGBoost",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Random Forest",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "Decision Tree",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "K-Nearest Neighbors",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "98.2",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "92.6",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "88.7",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "83.4",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "927",
+      "page": 4
+    },
+    {
+      "level": "H5",
+      "text": "2024 2nd International Conference on Disruptive Technologies (ICDT)",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Support Vector Machine",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Naive Bayes",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Logistic Regression",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "81.5",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "80.2",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "78.9",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "V. CONCLUSION",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "This UPI  fraud  detection  project  has  applied  innovative",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "methodologies to enhance the robustness and efficiency of our",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "fraud detection model. By addressing the imbalanced nature",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "of  the  dataset  with  the  Synthetic  Minority  Over-sampling",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Technique  (SMOTE),  we  have  successfully  balanced  the",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "representation of fraudulent transactions, boosting the model's",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "ability  to  recognize  subtle  patterns  indicative  of  fraudulent",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "operations.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "The application of Principal Component Analysis (PCA)",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "for  feature  extraction  has  contributed  to  the  reduction  of",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "dimensionality, capturing the most salient aspects of the data",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "and  mitigating  issues  related  to  multicollinearity.  This",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "simplified  the  computing  procedure  and  made  it  easier  to",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "understand",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "the",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "representation.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "the  underlying",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "tendencies",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "fraud",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Our  choice  of  XGBoost  as  the  training  model  has  been",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "effective, exploiting its capabilities in managing skewed data,",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "high predicted accuracy, and robustness. XGBoost's capacity",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "to  capture",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "the  data  has",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "considerably  boosted  the  model's  overall  effectiveness  in",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "recognizing probable cases of UPI fraud.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "intricate  relationships  within",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "For future scope we can reduce the number of transactions",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "details  [23]  [24]  that  is  needed  to  detect  the  transaction",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "authenticity  whereas  as  well  as  we  can  track  trends  in  user",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "interactions with the UPI platform by integrating analytics on",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "user  behavior.  Behavior  anomalies  may  be  used  as  early",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "warning signs of possible fraud.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "REFERENCES",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[1] Adekunle,  I.  M.,  &  Ozoh,  P.  (2023).  Fraud  detection  model  for",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "illegitimate transactions. Kabale University Interdisciplinary Research",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Journal, 2(2), 21-37 https://doi.org/10.1016/j.future.2015.01.001",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[2] Boulieris, P., Pavlopoulos, J., Xenos, A., & Vassalos, V. (2023). Fraud",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "detection with natural language processing. Machine Learning, 1 22.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "https://doi.org/10.24321/2394.6539.202012",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[3] Mytnyk, B., Tkachyk, O., Shakhovska, N., Fedushko, S., & Syerov, Y.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "(2023). Application of Artificial Intelligence for Fraudulent Banking",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Operations Recognition. Big Data and Cognitive-Computing,7(2),93.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "https://doi.org/10.1016/j.dss.2010.08.008",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[4] Ridwan, R., Abdullah, S., & Yusmita, F. (2022). IMPLEMENTATION",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "OF CASHLESS POLICY STRATEGIES TO MINIMIZE FRAUD IN",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "THE  GOVERNMENTSECTOR:  SYSTEMIC  REVIEW.  Jurnal",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Akuntansi,  12(3),  181-201.  https://doi.org/10.1007/s10994-023-",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "06354-5",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[5] Chang,  V.,  Di  Stefano,  A.,  Sun,  Z.,  &  Fortino,  G.  (2022).  Digital",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "payment  fraud  detection  methods  in  digital  ages  and  Industry  4.0.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "107734.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Computers",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "https://doi.org/10.1145/3394486.3403361",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Engineering,100,",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Electrical",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "and",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[6] Bandyopadhyay,  S.  K.,  &  Dutta,  S.  (2020).  Detection  of  fraud",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "transactions using recurrent neural network during COVID-19: fraud",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "transaction  during  COVID-19.  Journal  of  Advanced  Research  in",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Medical  Science  &  Technology  (ISSN:  2394-6539),7(3),16-21.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "https://doi.org/10.1016/j.compeleceng.2022.107734",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[7] Manocha,  S.,  Kejriwal,  R.,  &  Upadhyaya,  D.  A.  (2019,  September).",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "The  impact  of  demonetization  on  digital  payment  transactions:  a",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "statistical  study.  In  Proceedings  ofInternational  Conference  on",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "(ICACM).",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Advancements",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "https://doi.org/10.1109/TNNLS.2021.3136503",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "in  Computing  &  Management",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[8] Diadiushkin, A., Sandkuhl, K., & Maiatin, A. (2019). Fraud detection",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "in payments transactions: Overview of existing approaches and usage",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "for  instant  payments.  Complex  Systems  Informatics  and  Modeling",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Quarterly, (20), 72-88. https://doi.org/10.7250/csimq.2019-20.04",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[9] Baesens, B., Höppner, S., & Verdonck, T. (2021). Data engineering for",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "150,",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "fraud",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Decision",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "113492.https://doi.org/10.1109/ICICV50876.2021.9388431",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "detection.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Systems,",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Support",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[10] Carminati,  M.,  Baggio,  A.,  Maggi,  F.,  Spagnolini,  U.,  &  Zanero,  S.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "(2018).  FraudBuster:  temporal  analysis  and  detection  of  advanced",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "financial  frauds.  In  Detection  of  Intrusions  and  Malware,  and",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Vulnerability  Assessment:  15th  International  Conference,  DIMVA",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "2018, Saclay, France, June 28–29, 2018, Proceedings 15 (pp. 211-233).",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Springer",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "International,Publishing.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "https://doi.org/10.1016/j.procs.2023.01.231",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[11] Rastogi,  S.,  Sharma,  A.,  Panse,  C.,  &  Bhimavarapu,  V.  M.  (2021).",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Unified Payment Interface (UPI): A digital innovation and its impact",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "on financial inclusion and economic development. Universal Journal of",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Accounting",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "9(3),518-530.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Finance,",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "and",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "https://doi.org/10.1109/ICCCSP.2017.7944072",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[12] Gupta, P., Varshney, A., Khan, M. R., Ahmed, R., Shuaib, M., & Alam,",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "S. (2023). Unbalanced Credit Card Fraud Detection Data: A Machine",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Learning-Oriented  Comparative  Study  of  Balancing  Techniques.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Procedia",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Computer-Science,218,2575-2584.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "https://doi.org/10.3390/bdcc7020093",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[13] Hariharakrishnan, J., Mohanavalli, S., & Kumar, K. S. (2017, January).",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Survey  of  pre-processing  techniques  for  mining  big  data.  In  2017",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "international  conference  on  computer,  communication  and  signal",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "processing",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "IEEE.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "https://doi.org/10.33050/atm.v5i2.1593",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "(ICCCSP)",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "1-5).",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "(pp.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[14] Bhattacharyya, S., Jha, S., Tharakunnel, K., & Westland, J. C. (2011).",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Data  mining  for  credit  card  fraud:  A  comparative  study.  Decision",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "602-613.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "support",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "https://doi.org/10.1016/j.softx.2019.100341",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "systems,",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "50(3),",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[15] Branco, B., Abreu, P., Gomes, A. S., Almeida, M. S., Ascensão, J. T.,",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "&  Bizarro,  P.  (2020,  August).  Interleaved  sequence  rnns  for  fraud",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "detection.  In  Proceedings  of  the  26th  ACM  SIGKDD  international",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "conference on knowledge discovery & data mining (pp. 3101 3109).",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "https://doi.org/10.33369/jakuntansi.12.3.181-201",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[16] Zhu, B., Gao, Z., Zhao, J., & vanden Broucke, S. K. (2019). IRIC: An",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "R library for binary imbalanced classification.-SoftwareX,10,100341.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "https://doi.org/10.13189/ujaf.2021.090326",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[17] Dileep, M. R., Navaneeth, A. V., & Abhishek, M. (2021, February). A",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "novel approach for credit card fraud detection using decision tree and",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "random forest algorithms. In 2021 Third International Conference on",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Intelligent Communication Technologies and Virtual Mobile Networks",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "(ICICV)",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "IEEE.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "https://doi.org/10.33050/atm.v5i2.1593",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "1025-1028).",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "(pp.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[18] Ahmed,  M.,  Mahmood,  A.  N.,  &  Islam,  M.  R.  (2016).  A  survey  of",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "anomaly detection techniques in financial domain. Future Generation",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Computer",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "278-288.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "https://doi.org/10.1109/ICCCSP.2017.7944072",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Systems,",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "55,",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[19] Lavadkar,  M.  A.,  Thorat,  P.  K.,  Kasliwal,  A.  R.,  Gadekar,  J.  S.,  &",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Deshmukh,  D.  P.  Fingerprint  Biometric  Based  Online  Cashless",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Payment System. IOSR Journal of Computer Engineering (IOSR-JCE),",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "e-ISSN, 2278-0661. https://doi.org/10.1016/j.softx.2019.100341",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[20] Purnama,  S.,  Bangun,  C.  S.,  &  Faaroek,  S.  A.  (2021).  The  Effect  of",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Transaction Experience Using Digital Wallets on User Satisfaction in",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Millennial  Generation.  Aptisi  Transactions  on  Management  (ATM),",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "5(2), 161-168. https://doi.org/10.24321/2394.6539.202012",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[21] Greenacre, M., Groenen, P. J., Hastie, T., d’Enza, A. I., Markos, A., &",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Tuzhilina,  E.  (2022).  Principal  component  analysis.  Nature  Reviews",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Methods",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "100.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "https://doi.org/10.13189/ujaf.2021.090326",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Primers,",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "2(1),",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[22] Dablain,  D.,  Krawczyk,  B.,  &  Chawla,  N.  V.  (2022).  DeepSMOTE:",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Fusing  deep  learning  and  SMOTE  for  imbalanced  data.  IEEE",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Transactions",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "and  Learning-Systems.",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "https://doi.org/10.1109/TNNLS.2021.3136503",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "on  Neural  Networks",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[23] Rani,R.,  Yogi,  K.K.,  Yadav,  S.P.,.  Detection  of  Cloned  Attacks  in",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Connecting  Media  using  Bernoulli  RBM_RF  Classifier  (BRRC).",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Multimed Tools Appl (2024).",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "[24] Kanaujia, V.K., Kumar, A., Yadav, S.P., Advancements in Automatic",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Kidney  Segmentation  using  Deep  Learning  Frameworks  and",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Volumetric  Segmentation  Techniques  for  CT  Imaging:  A  Review,",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "Arch Computat Methods Eng 29, 1753–1770 (2024)",
+      "page": 5
+    },
+    {
+      "level": "H5",
+      "text": "928",
+      "page": 5
+    }
+  ]
+}
